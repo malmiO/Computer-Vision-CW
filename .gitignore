@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+space/
+outputs/
+cache/
+app/model/
+*.keras
+.ipynb_checkpoints/
+docs/
+src/
+tests/
