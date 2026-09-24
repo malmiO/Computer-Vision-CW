@@ -49,7 +49,7 @@ fig.tight_layout(); fig.savefig(FIG_DIR / "training_curves_all.png", dpi=150); p
 
 """The log.csv shows each epoch’s results, including learning-rate changes and when early stopping ended training."""
 
-RUN = exp.sort_values("val_qwk", ascending=False).run_name.iloc[0]   # or type a run name
+RUN = exp.sort_values("val_qwk", ascending=False).run_name.iloc[0]
 log = pd.read_csv(RUNS_DIR / RUN / "log.csv")
 print(f"{RUN}: {len(log)} epochs logged")
 display(log.round(4))
