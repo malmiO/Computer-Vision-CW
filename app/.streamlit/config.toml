@@ -1,0 +1,11 @@
+# Calm clinical palette: the only strong colour in the app is the triage banner,
+# so the accent here stays a muted teal rather than Streamlit's default red.
+[theme]
+primaryColor = "#1F6F8B"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F1F5F7"
+textColor = "#17313E"
+font = "sans serif"
+
+[server]
+maxUploadSize = 20

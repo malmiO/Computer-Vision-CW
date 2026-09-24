@@ -1,0 +1,13 @@
+# Runtime for the hosted app (Streamlit Community Cloud or a Hugging Face Space).
+# tensorflow-cpu is pinned to the version the model was trained with, so
+# best.keras loads without warnings; the CPU build is ~600 MB smaller than the
+# GPU one, which matters on a free 1 GB host.
+streamlit>=1.40
+tensorflow-cpu==2.20.0
+opencv-python-headless
+numpy
+pandas
+scikit-learn
+scipy
+pillow
+fpdf2
