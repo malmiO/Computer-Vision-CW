@@ -13,7 +13,7 @@ SPACE=space
 rm -rf "$SPACE" && mkdir -p "$SPACE/model" "$SPACE/examples"
 
 # 1. the app and the five modules it imports
-cp app/streamlit_app.py app/README.md app/requirements.txt "$SPACE/"
+cp app/streamlit_app.py app/project_journey.py app/README.md app/requirements.txt "$SPACE/"
 mkdir -p "$SPACE/.streamlit" && cp app/.streamlit/config.toml "$SPACE/.streamlit/"
 for f in config preprocess gradcam losses_metrics model inference; do
   cp "src/$f.py" "$SPACE/"

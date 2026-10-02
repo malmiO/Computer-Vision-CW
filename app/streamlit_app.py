@@ -193,13 +193,16 @@ def model_card_tab():
 
 st.title("DR-Sight")
 st.caption("Diabetic retinopathy screening support — grade, explanation and triage from a retinal photo.")
-tabs = st.tabs(["Screen one photo", "Screen a batch", "About this model"])
+tabs = st.tabs(["Screen one photo", "Screen a batch", "About this model", "Project Journey"])
 with tabs[0]:
     single_photo_tab()
 with tabs[1]:
     batch_tab()
 with tabs[2]:
     model_card_tab()
+with tabs[3]:
+    from project_journey import render as project_journey_tab
+    project_journey_tab()
 st.markdown("<p class='note'>Research prototype built for a Computer Vision coursework. It does not "
             "provide a diagnosis. Every result must be confirmed by a qualified eye-care professional."
             "</p>", unsafe_allow_html=True)

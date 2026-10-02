@@ -7,5 +7,5 @@ app/model/
 *.keras
 .ipynb_checkpoints/
 docs/
-src/
+
 tests/
