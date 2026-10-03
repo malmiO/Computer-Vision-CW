@@ -203,6 +203,6 @@ with tabs[2]:
 with tabs[3]:
     from project_journey import render as project_journey_tab
     project_journey_tab()
-st.markdown("<p class='note'>Research prototype built for a Computer Vision coursework. It does not "
+st.markdown("<p class='note'>This prototype built for a Computer Vision coursework. It does not "
             "provide a diagnosis. Every result must be confirmed by a qualified eye-care professional."
             "</p>", unsafe_allow_html=True)

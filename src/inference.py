@@ -142,7 +142,7 @@ def pdf_report(result: dict, original: np.ndarray, out_path: str | Path) -> str:
             pdf.cell(0, 6, "Low confidence: human grader review recommended.", new_x="LMARGIN", new_y="NEXT")
             pdf.set_text_color(0, 0, 0)
     pdf.ln(4); pdf.set_font("Helvetica", "I", 8)
-    pdf.multi_cell(0, 4, "Research prototype for a university coursework. Not a medical device and not a "
+    pdf.multi_cell(0, 4, "This prototype for a university coursework. Not a medical device and not a "
                          "diagnosis. All results must be confirmed by a qualified eye-care professional.")
     pdf.output(str(out_path))
     return str(out_path)
