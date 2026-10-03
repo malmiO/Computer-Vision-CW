@@ -106,10 +106,10 @@ def show_result(res: dict, image: np.ndarray):
                    "worse than 99% of the images the model learned from.")
 
     from inference import pdf_report
-    pdf_path = Path(tempfile.mkdtemp()) / "dr_sight_report.pdf"
+    pdf_path = Path(tempfile.mkdtemp()) / "Aura_Retina_report.pdf"
     pdf_report(res, image, pdf_path)
     st.download_button("Download the screening summary (PDF)", pdf_path.read_bytes(),
-                       file_name="dr_sight_report.pdf", mime="application/pdf")
+                       file_name="Aura_Retina_report.pdf", mime="application/pdf")
 
 
 def single_photo_tab():
